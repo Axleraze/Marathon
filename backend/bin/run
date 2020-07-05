@@ -1,2 +1,15 @@
-./bin/activate
-./bin/prj/manage.py runserver 8989
+#!/bin/bash
+cd ~/Documents/Marathon/backend
+
+source ./venv/bin/activate
+
+case "$#" in
+0 )
+        port=8282
+;;
+1 ) 
+        port=$1
+esac
+
+cd venv/bin/prj
+./manage.py runserver $port

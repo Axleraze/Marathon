@@ -1,0 +1,10 @@
+tmp/
+*.pyc
+__pycache__
+venv/
+node_modules/
+package-lock.json
+.vscode
+backend/bin/prj/db.sqlite3
+
+
