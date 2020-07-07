@@ -1,6 +1,9 @@
-cd backend
+cd ~/Documents/Marathon/backend
+
 virtualenv -p python3 venv
-. ./venv/bin/activate
+source ./venv/bin/activate
+
 python -m pip install -r requirements.txt
-cd prj
+
+cd venv/bin/prj
 ./manage.py migrate
